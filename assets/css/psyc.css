@@ -1,0 +1,46 @@
+body {
+	background: lightgray;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	letter-spacing: .7px;
+}
+
+header {
+	text-align: center;
+	align-content: center;
+}
+
+/* instructions */
+
+.list-group {
+	list-style: none;
+	border: 5px outset lawngreen;
+	border-radius: 3px;
+
+}
+
+.list-group-item {
+	background: lightcyan;
+	font-size: 18px;
+}
+
+/* main content */
+
+.left{
+	margin-left: 15px;
+}
+
+.border{
+	border: 5px outset purple;
+}
+
+img {
+	width: 200px;
+	display: block;
+	margin: auto;
+	
+}
+
+.row{
+	font-size: 16px;
+}
+
