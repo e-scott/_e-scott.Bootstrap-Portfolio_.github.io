@@ -22,8 +22,8 @@ body{
     
 }
 
-ol {
-   list-style-type: none;
+.howTo ol {
+   list-style: none;
 }
 
 .userTot{
