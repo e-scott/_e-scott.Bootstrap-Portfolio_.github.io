@@ -19,7 +19,11 @@ body{
 
 .howTo li {
     text-align: left;
-    list-style: none;
+    
+}
+
+ol {
+   list-style: none;
 }
 
 .userTot{
