@@ -1,8 +1,11 @@
 $(document).ready(function(){
+    
+    //having goku blacks being any number between 19-146
     var number = Math.floor(Math.random() * 127 + 19)
 
     $('#eHealth').text(number);
 
+    //setting the imagines to a random number between 1-16
     var goku = Math.floor(Math.random() * 15 + 1);
     var vegeta = Math.floor(Math.random() * 15 + 1);
     var trunks = Math.floor(Math.random() * 15 + 1);
@@ -12,6 +15,7 @@ $(document).ready(function(){
     var wins = 0;
     var loss = 0;
 
+    //writes the wins and losses to webpage
     $('#wins').text(wins);
     $('#loss').text(loss);
 
@@ -44,8 +48,8 @@ $(document).ready(function(){
         reset();
     }
 
-    // click for z-warriors //
-    $('#goku').on("click", function(){
+    // click for the variables to add points and add them together//
+    $('#goku').on("click", () => {
         zwarrior = zwarrior + goku;
         $('#final').text(zwarrior);
         if (zwarrior === number){
@@ -56,7 +60,8 @@ $(document).ready(function(){
         }
     })
 
-    $('#vegeta').on("click", function(){
+
+    $('#vegeta').on("click", () => {
         zwarrior = zwarrior + vegeta;
         $('#final').text(zwarrior);
         if (zwarrior === number){
@@ -67,7 +72,7 @@ $(document).ready(function(){
         }
     })
 
-    $('#trunks').on("click", function(){
+    $('#trunks').on("click", () => {
         zwarrior = zwarrior + trunks;
         $('#final').text(zwarrior);
         if (zwarrior === number){
@@ -78,7 +83,7 @@ $(document).ready(function(){
         }
     })
 
-    $('#18').on("click", function(){
+    $('#18').on("click", () => {
         zwarrior = zwarrior + a18;
         $('#final').text(zwarrior);
         if (zwarrior === number){
@@ -88,4 +93,6 @@ $(document).ready(function(){
             fail();
         }
     })
+    
+    
 })
